@@ -313,6 +313,7 @@ export default class VideoPlayer extends Component {
     return (
       [
         <Image
+          key={Math.random(200)}
           {...props}
           style={[
             styles.thumbnail,
@@ -323,6 +324,7 @@ export default class VideoPlayer extends Component {
           source={thumbnail}
         />,
         <View
+          key={1+Math.random(200)}
           style={{
             position: 'absolute',
             top: 0,
@@ -534,4 +536,3 @@ VideoPlayer.defaultProps = {
   resizeMode: 'contain',
   customStyles: {},
 };
-

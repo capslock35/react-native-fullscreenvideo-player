@@ -95,6 +95,7 @@ export default class VideoPlayer extends Component {
       isControlsVisible: !props.hideControlsOnStart,
       duration: 0,
       isSeeking: false,
+      currentTime:0
     };
 
     this.seekBarWidth = 200;
